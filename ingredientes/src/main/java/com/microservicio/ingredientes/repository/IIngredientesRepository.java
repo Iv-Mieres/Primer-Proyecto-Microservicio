@@ -10,5 +10,5 @@ import com.microservicio.ingredientes.model.Ingrediente;
 @Repository
 public interface IIngredientesRepository extends JpaRepository<Ingrediente, Long>{
 
-	List<Ingrediente> findByPlatosNombre(String nombre);
+	List<Ingrediente> findByPlatos(String plato);
 }
