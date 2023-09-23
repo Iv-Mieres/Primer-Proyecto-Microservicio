@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.microservicio.ingredientes.dto.IngredienteDTO;
-import com.microservicio.ingredientes.model.Ingrediente;
+import com.microservicio.ingredientes.dto.request.IngredienteDTO;
+import com.microservicio.ingredientes.dto.response.IngredienteDTORes;
 import com.microservicio.ingredientes.service.IIngredienteService;
 
 @RestController
@@ -30,7 +30,7 @@ public class IngredienteController {
 	}
 	
 	@GetMapping("/{plato}")
-	public ResponseEntity<List<Ingrediente>> listaIngredientes(@PathVariable String plato){
+	public ResponseEntity<List<IngredienteDTORes>> listaIngredientes(@PathVariable String plato){
 		return ResponseEntity.status(HttpStatus.OK)
 				.body(ingredienteService.listaIngredientesPorNombrePlato(plato));
 	}

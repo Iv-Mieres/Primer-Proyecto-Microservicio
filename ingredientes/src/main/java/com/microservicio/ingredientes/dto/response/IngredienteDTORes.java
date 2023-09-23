@@ -1,6 +1,4 @@
-package com.microservicio.ingredientes.dto;
-
-import java.util.List;
+package com.microservicio.ingredientes.dto.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,10 +7,9 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class IngredienteDTO {
+public class IngredienteDTORes {
 
 	private Long id;
 	private String nombreIngrediente;
-	private List<String> platos ;
-		
+	
 }
