@@ -33,8 +33,8 @@ public class IngredienteService implements IIngredienteService{
 	}
 
 	@Override
-	public List<Ingrediente> listaIngredietesPorNombrePlato(String plato) {
-		return ingredientesRepository.findByPlatosNombre(plato);
+	public List<Ingrediente> listaIngredientesPorNombrePlato(String plato) {
+		return ingredientesRepository.findByPlatos(plato);
 	}
 	
 	

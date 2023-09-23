@@ -9,6 +9,6 @@ public interface IIngredienteService {
 	
 	void saveIngrediente(IngredienteDTO ingrediente);
 	IngredienteDTO verIngredientePorId(Long id);
-	List<Ingrediente> listaIngredietesPorNombrePlato(String plato); 
+	List<Ingrediente> listaIngredientesPorNombrePlato(String plato); 
 
 }
